@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Dream PC | Ecommerce Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="cart.html">
+                        <img src="images/dreampc logo.png" width="125px">
+                    </a>
+                </div>
+                <div class="search-container">
+                    <input type="text" class="search-bar" placeholder="Search...">
+                    <button class="search-button" type="button">Search</button>
+                </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./login.html">Account</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/carty.png" width="30px" height="30px">
+                    <img src="images/images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+    
+    <!------- checkout Form --------->
+    
+    <div class="offer">
+        <div class="containercheckout">
+            <section class="small-cointainer cart-page">
+                <header class="head">Checkout Form</header>
+                    <form action="#" class="form">
+                    <div class="input-box">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter full name" required />
+                    </div>
+                        <div class="input-box">
+                            <label>Address</label>
+                            <input type="text" placeholder="Enter address" required />
+                        </div>
+                        <div class="column">
+                            <div class="input-box">
+                                <label>Phone Number</label>
+                                <input type="number" placeholder="Enter phone number" required />
+                            </div>
+                            <h2 class="all">Shipping Mode</h2>
+                            <select>
+                                <option>Cash On Delivery</option>
+                                <option>GCash</option>
+                                <option>PayMaya</option>
+                                <option>Credit Card</option>
+                                <option>Debit card</option>
+                            </select>   
+                        </div>
+                        <button class="btn">Next</button>
+                    </div>
+                    </form>
+                </section>
+        
+        </div>
+    </div>
+    
+    <!------- Footer --------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Please support me</p>
+                    <div class="app-logo">
+                        <img src="images/images/play-store.png">
+                        <img src="images/images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/dreampc logo.png">
+                    <p>By Reigh And Weskita</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Discount</li>
+                        <li>Blogs</li>
+                        <li>Policy</li>
+                        <li>Shipping</li>
+                        <li>Coupons</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>LinkedIn</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+                <p class="copyright">Copyright 2024 - Dean Billedo - </p>
+            </hr>
+        </div>
+    </div>
+
+    <!---------JS for toggle menu --------->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px"
+            }
+            else{
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+    
+
+</body>
+</html>

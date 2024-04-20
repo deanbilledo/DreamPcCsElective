@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/loading.css">
+
+
+    <title>Loading</title>
+
+    <script>
+        
+        function delayedRedirect(url, delay) {
+            setTimeout(function() {
+                window.location.href = url; 
+            }, delay); 
+        }
+    
+      
+        window.onload = function() {
+            delayedRedirect('.././contact.html', 300); 
+        };
+    </script>
+
+</head>
+<body>
+
+    <div class="center">
+        <div class="ring"></div>
+        <span>Loading...</span>
+    </div>
+    <div id="secondsdisplay"></div>
+
+
+</body>
+</html>
+
+
+<!---
+<
+
