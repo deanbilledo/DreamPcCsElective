@@ -18,10 +18,6 @@
                         <img src="images/dreampc logo.png" width="125px">
                     </a>
                 </div>
-                <div class="search-container">
-                    <input type="text" class="search-bar" placeholder="Search...">
-                    <button class="search-button" type="button">Search</button>
-                </div>
                     <nav>
                         <ul id="MenuItems">
                             <li><a href="index.html">Home</a></li>
@@ -36,43 +32,79 @@
             </div>
         </div>
     </div>
-    
-    <!------- checkout Form --------->
-    
-    <div class="offer">
-        <div class="containercheckout">
-            <section class="small-cointainer cart-page">
-                <header class="head">Checkout Form</header>
-                    <form action="#" class="form">
+
+    <h1 class="big-payment-form-text">Payment Form</h1>
+
+    <div class="payment-form">
+        <form action="#">
+            <div class="payment-details">
+                <h3 style="text-align: center;">Billing Address</h3>
+
+                <div class="input-box">
+                    <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full_name" required placeholder="Full Name">
+                </div>
+
+                <div class="input-box">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required placeholder="Email">
+                </div>
+                
+                <div class="input-box">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required placeholder="Address">
+                </div>
+                
+                <div class="input-box">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required placeholder="City">
+                </div>
+                
+                <div class="input-box">
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" required placeholder="State">
+                </div>
+                
+                <div class="input-box">
+                    <label for="zip-code">Zip Code:</label>
+                    <input type="text" id="zip-code" name="zip_code" required placeholder="Zip Code">
+
+                </div>
+                
+            </div>
+                <h3 style="text-align: center; padding-top: 5%; padding-bottom: 5%;">Payment Details</h3>
+                <div class="payment-details">
+                    <div class="input-box input">
+                        <label for="card-number">Credit Card Number:</label>
+                        <input type="text" id="card-number" name="card_number" required placeholder="Credit Card Number">
+                    </div>
+                    
                     <div class="input-box">
-                        <label>Full Name</label>
-                        <input type="text" placeholder="Enter full name" required />
+                        <label for="exp-month">Exp Month:</label>
+                        <input type="text" id="exp-month" name="exp_month" placeholder="MM" maxlength="2" required>
                     </div>
-                        <div class="input-box">
-                            <label>Address</label>
-                            <input type="text" placeholder="Enter address" required />
-                        </div>
-                        <div class="column">
-                            <div class="input-box">
-                                <label>Phone Number</label>
-                                <input type="number" placeholder="Enter phone number" required />
-                            </div>
-                            <h2 class="all">Shipping Mode</h2>
-                            <select>
-                                <option>Cash On Delivery</option>
-                                <option>GCash</option>
-                                <option>PayMaya</option>
-                                <option>Credit Card</option>
-                                <option>Debit card</option>
-                            </select>   
-                        </div>
-                        <button class="btn">Next</button>
+                    
+                    <div class="input-box">
+                        <label for="exp-year">Exp Year:</label>
+                        <input type="text" id="exp-year" name="exp_year" placeholder="YYYY" maxlength="4" required>
                     </div>
-                    </form>
-                </section>
-        
-        </div>
+                    
+                    <div class="input-box">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" maxlength="3" required placeholder="CCV">
+                    </div>
+            </div>
+            <h3 style="text-align: center; padding-top: 5%; padding-bottom: 5%;">Accepted Payments</h3>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="images/cards.png" alt="PayPal" style="max-width: 100%; max-height: 100%;">
+            </div>
+            <div style="text-align: center;">
+                <button type="submit" class="btn">Next</button>
+            </div>
+            
+        </form>
     </div>
+    
     
     <!------- Footer --------->
 
@@ -83,8 +115,7 @@
                     <h3>Download Our App</h3>
                     <p>Please support me</p>
                     <div class="app-logo">
-                        <img src="images/images/play-store.png">
-                        <img src="images/images/app-store.png">
+                        <img src="images/logoPlaceholder.png">
                     </div>
                 </div>
                 <div class="footer-col-2">

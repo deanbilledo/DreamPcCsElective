@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Cart - Dream PC | Ecommerce Website</title>
     <link rel="stylesheet" href="./css/style.css">
-
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -41,43 +40,14 @@
     <!------- Cart --------->
 
     <div class="small-cointainer cart-page">
-        <table>
+        <table id="myTable">
             <tr>
-                <th>Products</th>
-                <th>Quantity</th>
-                <th>Subtotal</th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="images/redpc.jpg">
-                        <div>
-                            <p>Red PC by Reigh Ling</p>
-                            <small>Price: 100.00 PHP</small>
-                            <br>
-                            <a href="#">Remove</a>
-                        </div>
-                    </div>
-
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>100.00 PHP</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="images/redpc.jpg">
-                        <div>
-                            <p>Red PC by Reigh Ling</p>
-                            <small>Price: 100.00 PHP</small>
-                            <br>
-                            <a href="#">Remove</a>
-                        </div>
-                    </div>
-
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>100.00 PHP</td>
+                <th class="th th-higligted" onclick="sortTable(0)">All</th>
+                <th class="th" onclick="sortTable(1)">To Pay</th>
+                <th class="th" onclick="sortTable(2)">To Ship</th>
+                <th class="th" onclick="sortTable(3)">To Receive</th>
+                <th class="th" onclick="sortTable(4)">Completed</th>
+                <th class="th" onclick="sortTable(5)">Cancelled</th>
             </tr>
             <tr>
                 <td>
@@ -96,24 +66,15 @@
                 <td>100.00 PHP</td>
             </tr>
         </table>
-
         <div class="total-price">
             <table>
                 <tr>
-                    <td>Subtotal</td>
+                    <td>To Recieve</td>
                     <td>300.00 PHP</td>
-                </tr>
-                <tr>
-                    <td>Shipping Fee</td>
-                    <td>300.00 PHP</td>
-                </tr>
-                <tr>
-                    <td>Total</td>
-                    <td>600.00 PHP</td>
                 </tr>
                 <tr>
                     <td>
-                        <div class="btn" onclick="navigateTo('./loading/loading_cart_to_checkout.html')">Place Order</div>
+                        <div class="btn">Order Recieved</div>
                     </td>
                 </tr>
             </table>
@@ -178,11 +139,7 @@
         }
     </script>
 
-<script>
-    function navigateTo(url) {
-        window.location.href = url; // Redirect to the specified URL
-    }
-    </script>
+    
 
 </body>
 </html>
