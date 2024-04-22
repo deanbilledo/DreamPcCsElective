@@ -5,6 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 600px) {
+    body {
+        min-width: 600px; 
+    }
+}
+
 body{
     /*background: linear-gradient(to top, #4F1F59, #B91C37, #1D0A37);*/
     background: url('../images/true.jpg') no-repeat center center fixed;
