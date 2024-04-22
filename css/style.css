@@ -169,7 +169,7 @@ p{
     margin: 5%; /* Adjust margin to be relative to container size */
     max-width: 300px; /* Set a maximum width to avoid stretching on larger screens */
     height: auto; /* Let the height adjust based on content */
-    background: rgb(214, 141, 141);
+    background: rgb(224, 211, 211);
     box-sizing: border-box; /* Include padding and border in element's total width and height */
     aspect-ratio: 10/10;
 }
